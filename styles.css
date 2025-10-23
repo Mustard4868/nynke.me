@@ -7,6 +7,10 @@ body {
     align-items: center;
 }
 
+a {
+    color: #cdd6f4;
+}
+
 .container {
     background-color: #1e1e2e;
     border: 3px solid #cba6f7;
@@ -16,4 +20,23 @@ body {
     width: 60vw;
     height: 75vh;
     font-family: "Courier New", Courier, monospace;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    49% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    99% {
+        opacity: 0;
+    }
+}
+
+.blinking-text {
+    animation: blink 1s infinite;
 }
