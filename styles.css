@@ -20,6 +20,7 @@ a {
     width: 60vw;
     height: 75vh;
     font-family: "Courier New", Courier, monospace;
+    overflow-y: auto;
 }
 
 @keyframes blink {
