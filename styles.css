@@ -4,7 +4,7 @@ body {
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-    color: #cdd6f4;
+    color: rgb(205, 214, 244);
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -12,36 +12,32 @@ body {
 }
 
 a {
-    color: #cdd6f4;
+    color: rgb(205, 214, 244);
+    padding-right: 12px;
 }
 
 .container {
     background-color: rgba(30, 30, 46, 0.95);
-    border: 3px solid #cba6f7;
+    border: 3px solid rgb(203, 166, 247);
     border-radius: 12px;
-    box-shadow: 0px 0px 6px #cba6f7;
+    box-shadow: 0px 0px 6px rgb(203, 166, 247);
     padding: 1rem;
     width: 60vw;
     height: 75vh;
-    font-family: "JetBrains Mono Nerd", "Courier New", Courier, monospace;
+    font-family: "Courier New", Courier, monospace;
     overflow-y: auto;
 }
 
-@keyframes blink {
-    0% {
-        opacity: 1;
-    }
-    49% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0;
-    }
-    99% {
-        opacity: 0;
-    }
+.blinking-text {
+    animation: blink 1s step-end infinite;
 }
 
-.blinking-text {
-    animation: blink 1s infinite;
+@keyframes blink {
+    from,
+    to {
+        color: rgb(205, 214, 244);
+    }
+    50% {
+        color: transparent;
+    }
 }
