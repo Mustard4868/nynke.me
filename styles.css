@@ -1,3 +1,13 @@
+:root {
+    --accent-color: rgb(203, 166, 247);
+    --text-color: rgb(205, 214, 244);
+}
+
+@font-face {
+    font-family: "JetBrainsMono NF";
+    src: url("fonts/JetBrainsMono-Regular.woff2");
+}
+
 html,
 body {
     margin: 0;
@@ -11,7 +21,7 @@ body {
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-    color: rgb(205, 214, 244);
+    color: var(--text-color);
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -19,19 +29,19 @@ body {
 }
 
 a {
-    color: rgb(205, 214, 244);
-    padding-right: 12px;
+    color: var(--text-color);
+    padding-right: 1em;
 }
 
 .container {
     background-color: rgba(30, 30, 46, 0.95);
-    border: 3px solid rgb(203, 166, 247);
+    border: 3px solid var(--accent-color);
     border-radius: 12px;
-    box-shadow: 0px 0px 6px rgb(203, 166, 247);
+    box-shadow: 0px 0px 6px var(--accent-color);
     padding: 1rem;
     width: 60vw;
     height: 75vh;
-    font-family: "JetBrainsMono Nerd Font", "Courier New", Courier, monospace;
+    font-family: "JetBrainsMono NF", "Courier New", Courier, monospace;
     overflow-y: auto;
 }
 
@@ -39,10 +49,23 @@ a {
     animation: blink 1s step-end infinite;
 }
 
+.inline {
+    display: inline;
+}
+
+.colored {
+    color: var(--accent-color);
+}
+
+.distro-logo {
+    fill: var(--text-color);
+    vertical-align: middle;
+}
+
 @keyframes blink {
     from,
     to {
-        color: rgb(205, 214, 244);
+        color: var(--text-color);
     }
     50% {
         color: transparent;
