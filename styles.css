@@ -13,6 +13,7 @@ body {
     margin: 0;
     height: 100%;
     overflow: hiden;
+    caret-color: transparent;
 }
 
 body {
@@ -47,6 +48,17 @@ a {
 
 .blinking-text {
     animation: blink 1s step-end infinite;
+}
+
+.input-area {
+    outline: none; /* removes focus border */
+    position: relative;
+}
+
+.input-area::after {
+    content: "▁";
+    animation: blink 1s step-end infinite;
+    margin-left: 0.05ch; /* small gap if needed */
 }
 
 .inline {
