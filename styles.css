@@ -17,11 +17,6 @@ body {
 }
 
 body {
-    /*background-image: url("images/background.webp");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    background-size: cover;*/
     color: var(--text-color);
     height: 100vh;
     display: flex;
