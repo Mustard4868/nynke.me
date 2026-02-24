@@ -17,11 +17,11 @@ body {
 }
 
 body {
-    background-image: url("images/background.webp");
+    /*background-image: url("images/background.webp");
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    background-size: cover;
+    background-size: cover;*/
     color: var(--text-color);
     height: 100vh;
     display: flex;
@@ -32,6 +32,67 @@ body {
 a {
     color: var(--text-color);
     padding-right: 1em;
+}
+
+.custom-pattern {
+    background-image:
+        linear-gradient(
+            30deg,
+            #b4befe 12%,
+            transparent 12.5%,
+            transparent 87%,
+            #b4befe 87.5%,
+            #b4befe
+        ),
+        linear-gradient(
+            150deg,
+            #b4befe 12%,
+            transparent 12.5%,
+            transparent 87%,
+            #b4befe 87.5%,
+            #b4befe
+        ),
+        linear-gradient(
+            30deg,
+            #b4befe 12%,
+            transparent 12.5%,
+            transparent 87%,
+            #b4befe 87.5%,
+            #b4befe
+        ),
+        linear-gradient(
+            150deg,
+            #b4befe 12%,
+            transparent 12.5%,
+            transparent 87%,
+            #b4befe 87.5%,
+            #b4befe
+        ),
+        linear-gradient(
+            60deg,
+            #b4befe80 25%,
+            transparent 25.5%,
+            transparent 75%,
+            #b4befe80 75%,
+            #b4befe80
+        ),
+        linear-gradient(
+            60deg,
+            #b4befe80 25%,
+            transparent 25.5%,
+            transparent 75%,
+            #b4befe80 75%,
+            #b4befe80
+        );
+    background-size: 100px 175px;
+    background-position:
+        0 0,
+        0 0,
+        50px 87.5px,
+        50px 87.5px,
+        0 0,
+        50px 87.5px;
+    background-color: #181825;
 }
 
 .container {
