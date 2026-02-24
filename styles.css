@@ -108,6 +108,7 @@ a {
     width: 60vw;
     height: 75vh;
     font-family: "JetBrainsMono NF", "Courier New", Courier, monospace;
+    font-size: 16px;
     overflow-y: auto;
     backdrop-filter: blur(6px);
 }
@@ -116,6 +117,7 @@ a {
     .container {
         width: 85vw;
         height: 90vh;
+        font-size: clamp(2rem, 2.5vw, 1.2rem);
     }
 }
 
