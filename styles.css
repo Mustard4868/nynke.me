@@ -26,7 +26,16 @@ body {
 
 a {
     color: var(--text-color);
-    padding-right: 1em;
+    padding: 5px;
+}
+
+.button {
+    margin-right: 10px;
+    background-color: rgba(205, 214, 244, 0.25);
+}
+
+.button:hover {
+    background-color: rgba(205, 214, 244, 0.5);
 }
 
 .custom-pattern {
