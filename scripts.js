@@ -19,7 +19,6 @@ class AppNavigation extends HTMLElement {
     this.innerHTML = `
       <ul>
         <a class="button" href="index.html">Home</a>
-        <a class="button" href="about.html">About Me</a>
         <a class="button" href="friends.html">Friends</a>
       </ul>
     `;
