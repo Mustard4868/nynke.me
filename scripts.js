@@ -20,6 +20,7 @@ class AppNavigation extends HTMLElement {
       <ul>
         <a class="button" href="index.html">Home</a>
         <a class="button" href="friends.html">Friends</a>
+        <a class="button" href="blog.html">Blog</a>
       </ul>
     `;
   }
